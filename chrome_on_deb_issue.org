@@ -1,0 +1,10 @@
+* Google Chrome Unlock Keyring Issue
+
+#+BEGIN_SRC sh
+sudo apt install seahorse -y
+seahorse &  ## execute by your current user not root
+#+END_SRC
+
+Go to the Login Session, and delete the Chrome Safe Storage
+
+Then here you go.
