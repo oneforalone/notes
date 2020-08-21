@@ -642,7 +642,8 @@ options:
 -p: promote messages
 -t: timeout
 
-read from file:imagesimages 
+read from file.
+
 #+BEGIN_SRC shell
 cat filename | while read line
 do
@@ -661,7 +662,8 @@ do
 file descriptor limited to 9 in shell, redirect all: *exec 2> info.err*, close file
 descriptor: *exec 3>&-*
 
-read and write to a file:imagesimages
+read and write to a file.
+
 #+BEGIN_SRC sh
 $
 $ cat test.sh
@@ -848,8 +850,9 @@ clear
 syntax: dialog --widget parameters
 
 widget:
-[[file:images/dialog-widget.png]]
-[[file:images/dialog-widget-1.png]]
+
+[[file:../images/dialog-widget.png]]
+[[file:../images/dialog-widget-1.png]]
 
 1. msgbox
 
@@ -866,15 +869,15 @@ $
 
 **** dialog options
 
-[[file:images/dialog-options.png]]
-[[file:images/dialog-options-1.png]]
+[[file:../images/dialog-options.png]]
+[[file:../images/dialog-options-1.png]]
 
 GNOME: gdialog, zenity
 
 zenity widget:
 
-[[file:images/zenity-widget.png]]
-[[file:images/zenity-widget-1.png]]
+[[file:../images/zenity-widget.png]]
+[[file:../images/zenity-widget-1.png]]
 
 
 
@@ -886,7 +889,7 @@ syntax: sed options script file
 
 sed options:
 
-[[file:images/sed-options.png]]
+[[file:../images/sed-options.png]]
 
 sed '/pattern/command' filename
 e.g.
@@ -906,4 +909,4 @@ $
 syntax: awk options program file
 
 awk options:
-[[file:images/awk-options.png]]
+[[file:../images/awk-options.png]]
