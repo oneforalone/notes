@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="post">
+  <div class="post-title">
+    {{ page.title }}
+  </div>
+  <div class="post-category">
+    {% for category in page.categories %}
+    <a href="{{ site.url }}/category.html#{{ category }}">
+      <div class="post-category-name">
+        {{ category }}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  <div class="post-info">
+    {{ page.date | date_to_string }}
+
+    {% assign word_counter = page.content | strip_html | strip_newlines | remove: " " | size %}
+    {% if word_counter > 1000 %}
+    {{ word_counter | divided_by: 1000 }},{{ word_counter | modulo: 1000 }} Words
+    {% else %}
+    {{ word_counter }} Words
+    {% endif %}
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>

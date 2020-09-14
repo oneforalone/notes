@@ -1,0 +1,44 @@
+---
+---
+<div class="archives-body">
+    <div class="archives-container">
+        {% for category in site.categories %}
+        <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <div id="#{{ category_name | slugize }}"></div>
+            <p></p>
+
+            <a name="{{ category_name }}"><div class="category-title">「{{ category_name }}」</div></a>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </article>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="labels">
+        <div class="labels-header">
+            [Tags]
+        </div>
+        
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        
+        <a class="labels-item"
+            href=" {{ site.url }}/category.html#{{ category_name }}">
+            <div class="labels-item-name">
+                {{ category_name }}
+            </div>
+            <div class="labels-item-counter">
+                [{{ site.categories[category_name] | size }}]
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+
+
