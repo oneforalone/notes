@@ -1,6 +1,19 @@
 ---
 ---
 <div class="archives-body">
+    <div class="tag-box">
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <a class="tag"
+            href=" {{ site.url }}/category.html#{{ category_name }}">
+    
+                {{ category_name }}
+    
+                <sup>[{{ site.categories[category_name] | size }}]</sup>
+        </a>
+        {% endfor %}
+    </div>
+    
     <div class="archives-container">
         {% for category in site.categories %}
         <div class="archive-group">
@@ -18,27 +31,8 @@
         </div>
         {% endfor %}
     </div>
-
-    <div class="labels">
-        <div class="labels-header">
-            [Tags]
-        </div>
-        
-        {% for category in site.categories %}
-        {% capture category_name %}{{ category | first }}{% endcapture %}
-        
-        <a class="labels-item"
-            href=" {{ site.url }}/category.html#{{ category_name }}">
-            <div class="labels-item-name">
-                {{ category_name }}
-            </div>
-            <div class="labels-item-counter">
-                [{{ site.categories[category_name] | size }}]
-            </div>
-        </a>
-        {% endfor %}
-    </div>
 </div>
+
 
 
 

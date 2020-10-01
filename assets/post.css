@@ -4,16 +4,20 @@
   box-sizing: border-box;
   background-color: #FFF;
   border-radius: 5px;
-  width: 60%;
-  margin: 20px;
+  width: 980px;
+
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
+
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
+
 .post-title {
-  color: #000;
+  color: #777;
   font-size: 29px;
   margin-bottom: 10px;
   text-align: center;
@@ -50,4 +54,5 @@
 
 .post-content {
     line-height: 29px;
+    color: #666;
 }
