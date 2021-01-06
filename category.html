@@ -1,38 +1,34 @@
 ---
 ---
-<div class="archives-body">
+<main class="container">
     <div class="tag-box">
         {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <a class="tag"
             href=" {{ site.url }}/category.html#{{ category_name }}">
-    
+
                 {{ category_name }}
-    
+
                 <sup>[{{ site.categories[category_name] | size }}]</sup>
         </a>
         {% endfor %}
     </div>
-    
-    <div class="archives-container">
-        {% for category in site.categories %}
-        <div class="archive-group">
-            {% capture category_name %}{{ category | first }}{% endcapture %}
-            <div id="#{{ category_name | slugize }}"></div>
-            <p></p>
 
-            <a name="{{ category_name }}"><div class="category-title">「{{ category_name }}」</div></a>
-            <a name="{{ category_name | slugize }}"></a>
-            {% for post in site.categories[category_name] %}
-            <article class="archive-item">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            </article>
-            {% endfor %}
-        </div>
+
+    {% for category in site.categories %}
+    <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div id="#{{ category_name | slugize }}"></div>
+        <p></p>
+
+        <a name="{{ category_name }}"><div class="category-title">「{{ category_name }}」</div></a>
+        <a name="{{ category_name | slugize }}"></a>
+        {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </article>
         {% endfor %}
     </div>
+    {% endfor %}
+  </main>
 </div>
-
-
-
-
