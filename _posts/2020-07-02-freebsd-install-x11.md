@@ -3,8 +3,7 @@ title: FreeBSD 12 安装图形界面
 categories: [FreeBSD]
 ---
 
-没事玩了会 FreeBSD，安装完系统后发现，只有个黑黑的 terminal，这怎么能行呢？本意是想要作为桌面系统的。
-去社区和官网溜达一下，参照 [FreeBSD Handbook][FreeBSD-Handbook] 中的[I.5 节][I.5]就开始折腾了。
+没事玩了会 FreeBSD，安装完系统后发现，只有个黑黑的 terminal，这怎么能行呢？本意是想要作为桌面系统的。去社区和官网溜达一下，参照 [FreeBSD Handbook][FreeBSD-Handbook] 中的[I.5 节][I.5]就开始折腾了。
 
 对了，在国内的伙伴千万要记得，换成国内的 pkg 源哦，另外，官网给的镜像已经挂了，建议使用[中科大的镜像][ustc-mirror-freebsd]
 

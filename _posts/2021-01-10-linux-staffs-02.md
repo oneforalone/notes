@@ -3,6 +3,8 @@ title: 我与 Linux 的那些事02——选择
 categories: [Linux]
 ---
 
+上篇文章 [我与 Linux 的那些事 01——初识](https://oneforalone.github.io/linux/2021/01/09/linux-staffs-01.html) 介绍了我是怎么发现并尝试使用 Linux 的经过，本文将介绍我所了解的 Linux 桌面和版本。
+
 ## X Window System
 
 所谓 DE 呢，就是桌面环境。这里要说明一下，Linux 只是一个系统内核，并不是真正意义上的操作系统。但因为社区都这么叫，加上发行版本又很多，所以就成了以 Linux 为内核的操作系统的统称了。

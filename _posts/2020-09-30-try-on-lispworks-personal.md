@@ -2,6 +2,7 @@
 title: 初试 LispWorks
 categories: [Lisp]
 ---
+
 今天在 Cookbook 上突然发现 LispWorks Personal 可以免费使用，然后就去下载尝试了下，然后
 我只想说一句：LispWorks Personal Edition SUCKS。这个免费版的就是个样子货，或者说是用
 其他人的说法就是 —— LispWorks 就是 Common Lisp 的商业化产物。
