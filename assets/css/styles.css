@@ -132,6 +132,19 @@ footer {
   border: 1px solid #eeeeee;
 }
 
+.post h2, h3 {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.5rem;
+}
+
+.post h2 {
+  margin-top: 2rem;
+}
+
+.post h3 {
+  margin-top: 1rem;
+}
+
 .post-title {
   margin-top: 30px;
   font-size: 29px;

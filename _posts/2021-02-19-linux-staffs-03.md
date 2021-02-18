@@ -1,6 +1,6 @@
 ---
 title: 我与 Linux 的那些事03：命令参数
-catagories: [Linux]
+categories: [Linux]
 ---
 
 ## 序
