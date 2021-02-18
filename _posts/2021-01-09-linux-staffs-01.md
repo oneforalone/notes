@@ -1,5 +1,5 @@
 ---
-title: 我与 Linux 的那些事01——初识
+title: 我与 Linux 的那些事01：初识
 categories: [Linux]
 ---
 

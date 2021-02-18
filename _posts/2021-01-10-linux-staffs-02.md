@@ -1,5 +1,5 @@
 ---
-title: 我与 Linux 的那些事02——选择
+title: 我与 Linux 的那些事02：选择
 categories: [Linux]
 ---
 
