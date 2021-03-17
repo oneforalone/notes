@@ -10,11 +10,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-
-gitalk:
-  enable: true
-  github_id: oneforalone
-  owner: oneforalone
-  repo: oneforalone.github.io
-  client_id: 09f241a9cc2e1a00df46
-  clientSecret: 599353d0e49ac81733977f0bcd0ec4c1edae5e6f
