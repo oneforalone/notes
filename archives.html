@@ -5,11 +5,11 @@
         {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
         <a class="tag"
-            href=" {{ site.url }}/category.html#{{ category_name }}">
+            href=" {{ site.url }}/archives.html#{{ category_name }}">
 
                 {{ category_name }}
 
-                <sup>[{{ site.categories[category_name] | size }}]</sup>
+                <span class="badge">{{ site.categories[category_name] | size }}</span>
         </a>
         {% endfor %}
     </div>
