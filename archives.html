@@ -1,10 +1,11 @@
 ---
+title: Archives
 ---
 <main class="container">
-    <div class="tag-box">
+    <div class="tag-item">
         {% for category in site.categories %}
         {% capture category_name %}{{ category | first }}{% endcapture %}
-        <a class="tag"
+        <a class="tag-name"
             href=" {{ site.url }}/archives.html#{{ category_name }}">
 
                 {{ category_name }}
@@ -21,7 +22,7 @@
         <div id="#{{ category_name | slugize }}"></div>
         <p></p>
 
-        <a name="{{ category_name }}"><div class="category-title">「{{ category_name }}」</div></a>
+        <a name="{{ category_name }}"><div class="archive-item-title">「{{ category_name }}」</div></a>
         <a name="{{ category_name | slugize }}"></a>
         {% for post in site.categories[category_name] %}
         <article class="archive-item">

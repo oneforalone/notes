@@ -43,6 +43,7 @@ footer {
 /* From https://tholman.com/github-corners/ */
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
 
+
 .container {
   flex: 1;
   margin-top: 1vh;
@@ -52,6 +53,7 @@ footer {
   color: #333333;
 }
 
+/* blog page style */
 .slogan {
   font-size: 23px;
   text-align: center;
@@ -59,26 +61,23 @@ footer {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 .blog-summary {
   display: flex;
   justify-content: flex-end;
   color: #aaaaaa;
   font-size: 11px;
 }
-
-/* blog page style */
 .post-box {
   margin: 20px auto;
   padding: auto 10px;
   border-bottom: 1px solid #eeeeee;
 }
-.post-box .post-title {
+.post-box .title {
   text-decoration: none;
   font-size: 21px;
   color: #888888;
 }
-.post-desc {
+.post-box .abstract {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -86,14 +85,14 @@ footer {
   line-height: 26px;
   color: #666;
 }
-.post-info-bar {
+.info-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 5px;
 }
-.post-summary {
+.detail-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,12 +107,12 @@ footer {
   font-size: 11px;
   margin-right: 10px;
 }
-.tag {
+.tag-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.tag-name {
+.tag-bar .tag-name {
   color: #999999;
   font-size: 11px;
   height: 21px;
@@ -142,23 +141,24 @@ footer {
   text-align: center;
   color: #777777;
 }
-.post-tag-bar {
+.tags-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.tag-name-area {
+.tags-area .tag-bar {
   margin-top: 15px;
 }
-.post .post-info-bar {
-    justify-content: flex-end;
-    color: #aaaaaa;
-    font-size: 13px;
-    margin: 15px auto;
+.post-detail {
+  justify-content: flex-end;
+  color: #aaaaaa;
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: end;
 }
 .post-content {
-    line-height: 29px;
-    color: #666;
+  line-height: 29px;
+  color: #666;
 }
 
 /* categories page style */
@@ -169,7 +169,7 @@ footer {
   margin: 30px auto;
   padding: 10px auto;
 }
-.category-title {
+.archive-item-title {
   font-size: 27px;
   color: #333;
   margin-bottom: 20px;
@@ -184,24 +184,24 @@ footer {
 .archive-item a:hover {
   color: #73BC83;
 }
-.tag-box {
+.tag-item {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
 }
-.tag-box .tag {
+.tag-item .tag-name {
   display: inline-block;
   border-radius: 1rem;
   margin: -10px 15px 15px 10px;
   padding: 5px 7px 7px 10px;
   background-color: #999;
 }
-.tag-box a {
+.tag-item a {
   font-size: 15px;
   color: #fff;
 }
-.tag-box a:hover {
+.tag-item a:hover {
   background-color: #333;
 }
 

@@ -6,18 +6,18 @@ layout: default
   <div class="post-title">
     <h1>{{ page.title }}</h1>
   </div>
-  <div class="post-tag-bar">
+  <div class="tags-area">
     <p></p>
-    <div class="tag-name-area">
+    <div class="tag-bar">
     {% for category in page.categories %}
-    <a class="tag-name" href="{{ site.url }}/category.html#{{ category }}">
+    <a class="tag-name" href="{{ site.url }}/archives.html#{{ category }}">
       {{ category }}
     </a>
     {% endfor %}
     </div>
     <p></p>
   </div>
-  <div class="post-info-bar">
+  <div class="post-detail">
     {{ page.date | date_to_string }}
 
     {% assign word_counter = page.content | strip_html | strip_newlines | remove: " " | size %}
