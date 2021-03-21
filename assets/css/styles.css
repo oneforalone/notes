@@ -211,6 +211,11 @@ footer {
   color: #333;
   width: 60%;
 }
+@media (max-width: 1266px) {
+  .about {
+    width: 100%;
+  }
+}
 .about-me {
   display: flex;
   flex-direction: row;
