@@ -10,3 +10,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+plugins:
+  - jekyll-feed
+
+url: https://oneforalone.github.io
+author: Yuqi Liu
