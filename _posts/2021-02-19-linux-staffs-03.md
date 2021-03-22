@@ -160,7 +160,7 @@ A.2. Advanced Programming in the Unix Environment. Third Edition. Page 3.
 
 A.3. http://doc.novsu.ac.ru/oreilly/unix/upt/ch47_02.htm
 
-
+[oh-my-zsh]: https://ohmyz.sh
 [markdown]: https://markdown.com.cn/basic-syntax/
 [cmatrix]: https://github.com/abishekvashok/cmatrix
 [a.1]: https://unix.stackexchange.com/questions/4126/what-is-the-exact-difference-between-a-terminal-a-shell-a-tty-and-a-con

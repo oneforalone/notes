@@ -89,6 +89,7 @@ Alright，fuck Ubuntu，I'm done with u。老老实实又将 Win 10 重新装了
 [gcc]: http://gcc.gnu.org/
 [redhat]: https://www.redhat.com/en
 [centos]: https://www.centos.org/
+[fedora]: https://getfedora.org
 [arch]: https://archlinux.org/
 [gentoo]: https://www.gentoo.org/
 [initramfs]: https://baike.baidu.com/item/initramfs
