@@ -839,11 +839,6 @@ clear
 
 syntax: `dialog --widget parameters`
 
-- widget:
-
-![dialog-widget1](/assets/images/dialog-widget.png)
-![dialog-widget2](/assets/images/dialog-widget-1.png)
-
 - `msgbox`
 
   syntax: `dialog --msgbox text height width`
@@ -857,18 +852,7 @@ syntax: `dialog --widget parameters`
   $
   ```
 
-- dialog options
-
-  ![dialog-options1](/assets/images/dialog-options.png)
-  ![dialog-options2](/assets/images/dialog-options-1.png)
-
-  GNOME: `gdialog`, `zenity`
-
-- zenity widget:
-
-  ![zenity-widget1](/assets/images/zenity-widget.png)
-  ![zenity-widget2](/assets/images/zenity-widget-1.png)
-
+GNOME: `gdialog`, `zenity`
 
 ### Text process command: `sed` and `awk`
 
@@ -876,11 +860,7 @@ syntax: `dialog --widget parameters`
 
 syntax: `sed options script file`
 
-`sed` options:
-
-  ![sed-options](/assets/images/sed-options.png)
-
-  `sed '/pattern/command' filename`
+`sed '/pattern/command' filename`
 
 e.g.
 
@@ -898,7 +878,3 @@ $
 #### `awk`
 
 syntax: `awk options program file`
-
-`awk` options:
-
-![awk-options](/assets/images/awk-options.png)
